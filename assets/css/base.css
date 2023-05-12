@@ -1,0 +1,29 @@
+:root {
+  --primary--color: #2e80ce;
+  --background--color: #10375c;
+  --white--color: #fff;
+  --font-heading: "Sora", sans-serif;
+  --text-color: #575f66;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+.container {
+  width: 1170px;
+  max-width: calc(100%-270px);
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
