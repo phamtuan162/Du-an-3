@@ -21,9 +21,27 @@ body {
 }
 .container {
   width: 1170px;
-  max-width: calc(100%-270px);
+  max-width: calc(100% - 270px);
   margin: 0 auto;
 }
 a {
   text-decoration: none;
+}
+.btn {
+  --height: 60px;
+  display: inline-block;
+  font-weight: 400;
+  font-size: 1.6rem;
+  height: var(--height);
+  min-width: 205px;
+  padding: 0 20px;
+  line-height: var(--height);
+  text-align: center;
+  color: var(--white--color);
+  background: var(--primary--color);
+  border-radius: 30px;
+  border: 1px solid var(--primary--color);
+}
+.btn:hover {
+  opacity: 0.9;
 }
