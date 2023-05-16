@@ -2,7 +2,6 @@
   --primary--color: #2e80ce;
   --background--color: #10375c;
   --white--color: #fff;
-  --font-heading: "Sora", sans-serif;
   --text-color: #575f66;
 }
 * {
@@ -17,7 +16,15 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--text-color);
   font-family: "Sora", sans-serif;
+}
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
 }
 .container {
   width: 1170px;
@@ -44,4 +51,27 @@ a {
 }
 .btn:hover {
   opacity: 0.9;
+}
+.control {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #575f66;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  border-radius: 50%;
+  outline: none;
+  background: var(--white--color);
+  color: #575f66;
+}
+.control-btn:hover {
+  background-color: var(--primary--color);
+  color: var(--white--color);
+  border-color: var(--primary--color);
 }
